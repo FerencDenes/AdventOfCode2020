@@ -10,9 +10,7 @@ file.on('line', (line: string) => {
     const [range, char, password] = line.split(' ');
     const [from, to] = range.split('-');
     const ch = char[0];
-    // console.log(password.charAt(1), password)
     if ((password.charAt(+from - 1) == ch) !== (password.charAt(+to - 1) == ch)) {
-        // console.log(password.charAt(+from + 1) == ch, password.charAt(+to + 1) == ch, line, password.charAt(+from + 1), password.charAt(+to + 1), to);
         ++count;
     }
 })
