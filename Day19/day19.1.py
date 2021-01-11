@@ -89,11 +89,5 @@ for line in open("input.txt", "r"):
                 cnt2 += 1
 
 
-print(len(matches), len(matches42), len(matches31))
-# print(matches31)
-# print(matches42)
-ins = matches31.intersection(matches42)
-print(ins)
-
 print(cnt)
 print(cnt2)
